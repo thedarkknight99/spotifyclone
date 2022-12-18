@@ -13,8 +13,8 @@
 <body class="bg-black h-screen text-primary">
     <main class="h-full grid-template grid-template-areas grid grid-cols-[250px_1fr] grid-rows-[1fr_auto]">
         <aside class="sidenav">sidenav</aside>
-        <section class="content">
-            <header class="border-2 border-solid px-8 py-4">
+        <article class="content bg-transparent overflow-auto relative">
+            <header class="header px-8 py-4 bg-transparent">
                 <nav class="flex justify-end relative">
                     <button id="user-profile-btn"
                         class="flex items-center gap-x-2 rounded-2xl p-1 px-2 hover:bg-light-black">
@@ -42,10 +42,42 @@
                     </ul>
                 </nav>
             </header>
-            <article class="p-4">
-                <h1 class="text-2xl">Featured</h1>
+            <article id="cover-content"
+                class="grid absolute content-center top-0 px-4 py-4 bg-gradient-to-b from-light-black to-black-base w-full h-72 -z-[1]">
+                <h1 class="text-6xl">hello</h1>
+            </article>
+            <section id="page-content" class="bg-black-base mt-48">
+                <!-- <header class="px-8">
+                    <nav>
+                        <ul class="grid grid-cols-[50px_2fr_1fr_50px] gap-4 text-secondary">
+                            <li class="justify-self-center">#</li>
+                            <li>Title</li>
+                            <li>Album</li>
+                            <li>Duration</li>
+                        </ul>
+                    </nav>
+                </header> -->
+                <section class="px-8" id="tracks">
+                    <!-- <section
+                        class="track items-center justify-items-start rounded-md hover:bg-light-black grid grid-cols-[50px_2fr_1fr_50px] gap-4 text-secondary">
+                        <p class="justify-self-center">1</p>
+                        <section class="grid grid-cols-2 gap-2">
+                            <img src="" alt="" class="h-8 w-8" />
+                            <article class="flex flex-col gap-1">
+                                <h2 class="text-primary text-xl">song</h2>
+                                <p class="text-sm">artists</p>
+                            </article>
+                        </section>
+                        <p>album</p>
+                        <p>1:36</p>
+                    </section>
+                </section> -->
+                </section>
+
+                <!-- <article class="p-4">
+                <h1 class="text-2xl mb-4">Featured</h1>
                 <section class="featured-songs grid grid-cols-auto-fill-cards gap-4" id="featured-playlist-items">
-                    <!-- <section class="rounded p-4 border-2 border-solid">
+                    <section class="rounded p-4 border-2 border-solid">
                         <img src="https://i.scdn.co/image/ab67706f000000030b376c5227ccdccdfdc25ead" alt=" " />
                         <h2 class="text-sm">Name</h2>
                         <h3 class="text-xs">Description</h3>
@@ -54,10 +86,16 @@
                         <img src="https://i.scdn.co/image/ab67706f000000030b376c5227ccdccdfdc25ead" alt=" " />
                         <h2>Name</h2>
                         <h3>Description</h3>
-                    </section> -->
+                    </section> 
                 </section>
-            </article>
-        </section>
+            </article> -->
+                <!-- <article class="p-4">
+                <h1 class="text-2xl mb-4">Top List</h1>
+                <section class="featured-songs grid grid-cols-auto-fill-cards gap-4" id="top-playlist-items">
+
+                </section>
+            </article> -->
+        </article>
         <footer class="now-playing bg-white">footer</footer>
     </main>
 </body>

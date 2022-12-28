@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 .grid-template-areas {
-    grid-template-areas: "sidenav main" "now-playing now-playing";
+    grid-template-areas:
+        "sidenav main"
+        "now-playing now-playing";
 }
 
 grid-template-areas .content {
@@ -16,4 +18,19 @@ grid-template-areas .sidenav {
 
 grid-template-areas .now-playing {
     grid-area: now-playing;
+}
+
+.track:hover .track-no,
+.track.selected .track-no {
+    visibility: hidden;
+}
+
+.track:hover .play,
+.track.selected .play {
+    visibility: visible;
+}
+
+.track.playing .track-no,
+.track.playing .song-title {
+    color: theme("colors.green");
 }
